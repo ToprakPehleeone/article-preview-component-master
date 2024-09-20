@@ -5,5 +5,9 @@ shareBtn.addEventListener("click", () => {
     
     share.classList.toggle("none")
     trng.classList.toggle("none")
-    
 })
+
+
+
+
+

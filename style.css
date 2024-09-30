@@ -6,13 +6,12 @@
 
 body {
   background-color: hsl(210, 46%, 95%);
-  font-size: 13px;
+  
   font-family: "Manrope";
   padding-inline: 2rem;
 }
 
 .main {
-  overflow: hidden;
   border-radius: 15px;
   max-width: 800px;
   max-height: 280px;
@@ -21,8 +20,8 @@ body {
   margin-top: 200px;
 }
 
-.none{
-    display: none;
+.none {
+  display: none;
 }
 
 .bold {
@@ -35,18 +34,24 @@ body {
 
 #img_section {
   max-width: 290px;
+  
 }
 
 #img {
   max-width: 350px;
   height: 280px;
+  border-radius: 15px;
 }
 
-#info_section {
+.section--right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: white;
   padding: 25px 60px;
   max-width: 690px;
 }
+
+
 
 .header_info {
   font-weight: 700;
@@ -66,11 +71,12 @@ body {
   margin-top: 25px;
 }
 
-#avt-p {
+.avt-p {
   display: flex;
 }
 
-.share_btn {
+.share_popup {
+  position: relative;
   width: 30px;
   height: 30px;
   align-content: center;
@@ -78,8 +84,6 @@ body {
   background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
 }
-
-
 
 .user_info_p {
   display: flex;
@@ -94,7 +98,7 @@ body {
 }
 
 #michalle_avtr {
-  max-width: 40px;
+  max-width: 50px;
   border-radius: 50%;
 }
 
@@ -108,32 +112,31 @@ body {
   width: 280px;
   height: 60px;
   position: absolute;
-  top: 330px;
-  right: 500px;
+  bottom: 60px;
+  right: -120px;
 }
 
 .icon_share {
-  margin-left: 12px;  
+  margin-left: 12px;
   width: 22px;
   height: 20px;
-  
+
   vertical-align: middle;
 }
 
 #text_share {
-    display: inline;
+  display: inline;
   color: white;
   letter-spacing: 10px;
 }
 
 .triangle {
-  
   background-color: hsl(217, 19%, 35%);
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 375px;
-  right: 623px;
+  bottom: 50px;
+  left: 2px;
   rotate: 45deg;
 }
 
@@ -141,6 +144,12 @@ body {
   .main {
     flex-direction: column;
     overflow: visible;
+  }
+  
+  #michalle_avtr {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
   }
   #img {
     width: 100%;
@@ -150,7 +159,28 @@ body {
     max-height: 230px;
     margin: auto;
   }
-  #info_section {
-    max-width: 100%;
+  .section--right {
+    max-width: 350px;
+    margin: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+  .share{
+    top: 0px;
+    right: -60px;
+    width: 350px;
+    height: 90px;
+    padding-right: 90px;
+    font-size: .8rem;
+  }
+  .icon_share{
+    width: 1rem;
+    height: 1rem;
+  }
+  .triangle{
+    display: none;
+  }
+  .share_popup{
+    z-index: 2;
   }
 }

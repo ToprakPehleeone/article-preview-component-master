@@ -1,7 +1,7 @@
-const shareBtn = document.querySelector(".share_btn")
+const sharePopup = document.querySelector(".share_popup")
 const share = document.querySelector(".share")
 const trng = document.querySelector(".triangle")
-shareBtn.addEventListener("click", () => {
+sharePopup.addEventListener("click", () => {
     
     share.classList.toggle("none")
     trng.classList.toggle("none")
